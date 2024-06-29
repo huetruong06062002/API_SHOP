@@ -35,10 +35,10 @@ paths:
                 email:
                   type: string
                   format: email
-                  example: admin@gmail.com
+                  example:
                 password:
                   type: string
-                  example: 123456789Kha@
+                  example: 
               required:
                 - email
                 - password
