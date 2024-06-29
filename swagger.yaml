@@ -1,8 +1,8 @@
 openapi: 3.0.3
 info:
-  title: Swagger API Course FE
+  title: Backend API SHop
   description: |-
-    This is a list api of course FE
+    This is a list Backend API SHop
   contact:
     email: lttd0204@gmail.com
   version: 1.0.11
