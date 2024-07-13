@@ -7,7 +7,7 @@ info:
     email: lttd0204@gmail.com
   version: 1.0.11
 servers:
-  - url: https://api-shop-l5ir.onrender.com
+  - url: https://api-shop-ic3t.onrender.com/
 tags:
   - name: auth
     description: Everything about auth
@@ -108,10 +108,10 @@ paths:
                 email:
                   type: string
                   format: email
-                  example: admin@gmail.com
+                  example: 
                 password:
                   type: string
-                  example: 123456789Kha@
+                  example:
               required:
                 - email
                 - password
@@ -675,7 +675,7 @@ paths:
                 email:
                   type: string
                   format: email
-                  example: admin@gmail.com
+                  example: 
               required:
                 - email
           application/xml:
@@ -3168,7 +3168,7 @@ paths:
                 productId:
                   type: string
                   format: uuid
-                  example: admin@gmail.com
+                  example: 
               required:
                 - productId
           application/xml:
