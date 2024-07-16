@@ -74,7 +74,7 @@ const createOrder = (newOrder) => {
       const promises = newOrder.orderItems.map(updateProductStock);
       const results = await Promise.all(promises);
       const newData = results && results.filter((item) => item.id);
-      if (newData.length) {
+      if (!newData.length) {
         const arrId = [];
         newData.forEach((item) => {
           arrId.push(item.id);
@@ -285,8 +285,8 @@ const updateStatusOrder = (id, data) => {
         return;
       }
 
-      if(String(data.status)) {
-        existingOrder.status = data.status
+      if (String(data.status)) {
+        existingOrder.status = data.status;
       }
 
       if (data.isPaid) {
